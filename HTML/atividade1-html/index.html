@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira página</title>
+    <style> 
+        body {
+            font-family: Arial, helvetica, sans-serif;
+            background-color:rgb(245, 247, 247);
+            color:darkblue;
+        }
+
+        header h1{
+            color:darkblue;
+        }
+
+        header h2{
+            color: blue;
+        }
+
+        h2, h3 {
+            color: purple;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section, article {
+            background-color: rgb(155, 211, 193);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid darkblue;
+        }
+
+        .foto-perfil {
+            width: 150px;             
+            height: 150px;             
+            object-fit: cover;         
+            border-radius: 50%;       
+            border: 3px solid darkblue; 
+            float: left;          
+            margin-right: 20px;
+            margin-bottom: 10px;
+            display: block;
+            margin-bottom: 15px;       
+        }
+
+        .media-container {
+            margin-top: 30px;
+        }
+
+        video {
+            width: 100%;          
+            max-width: 1000px;     
+            height: auto;         
+            display: block;       
+            border-radius: 8px;    
+        }
+
+
+
+
+    </style>
+</head> 
+
+<body>
+    <header> 
+        <h1> Geração Tech 4.0 - Módulo 1 - HTML</h1> 
+        <h2> Página web em constante desenvolvimento </h2>
+        <p> Esta é uma página web para mostrar meu progresso no desenvolvimento web, 
+            aqui você vai encontrar um pouco sobre essa jornada e meus interesses. </p>
+    </header>
+    
+
+  <nav> 
+        <ul>
+            <li> <a href="#sobremim" target="_self">Sobre mim</a></li>
+            <li> <a href="#redessociais" target="_self">Redes Sociais</a></li>
+            <li> <a href="#video" target="_self">Meu vídeo favorito</a></li>
+            <li> <a href="#audio" target="_self">Minha música favorita</a></li>
+        </ul>
+       
+    </nav>
+
+    <main> 
+        <article id="sobremim"> 
+            <h2>Sobre mim</h2>
+            <img src="camila.png" alt=" Foto de Camila Fontenele" class="foto-perfil">
+            <p> Me chamo Camila Fontenele, tenho 33 anos, sou libriana e minha primeira formação é o Bacharelado em Farmácia, com residência
+                em Urgência e Emergência. Em 2025 iniciei a faculdade
+                de Análise e Desenvolvimento de Sistemas. Descobri uma paixão pela Tecnologia da Informação
+                e estou me dedicando a aprender cada vez mais sobre desenvolvimento web.
+                Pretendo migrar de carreira em breve e me tornar uma desenvolvedora Full Stack.
+            </p>
+        </article>
+
+        <section id="redessociais"> 
+            <h3> Minhas Redes Sociais </h3>
+            <ul> 
+                <li><a href="https://www.linkedin.com/in/camila-fontenele-meira-mar%C3%A7al-95b31a141/" target="_blank">Meu Linkedin</a></li>
+                <li><a href="https://www.instagram.com/camilafmm" target="_blank">Meu Instagram</a></li>
+                <li><a href="https://github.com/camilafmmarcal" target="_blank">Meu GitHub</a></li>
+                <li><a href="mailto:camilafmmarcal@gmail.com">Entre em contato por e-mail</a></li>
+            </ul>
+        </section>
+
+        <section id="video">
+            <h3> Meu vídeo favorito </h3>
+            <div> 
+                <video controls> 
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section id="audio">
+            <h3> Minha música favorita </h3>
+            <h4> "Música mais triste do ano - Luiz Lins" </h4>
+            <div>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+        </section>    
+    </main>
+</body>
+</html>
