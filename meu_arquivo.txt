@@ -1,0 +1,7 @@
+Minha primeira atividade utilizando Git e GitHub.
+
+Estou aprendendo a utilizar o controle de versão
+para gerenciar projetos e compartilhar arquivos.
+
+Este arquivo foi criado localmente e enviado
+para um repositório remoto no GitHub.
