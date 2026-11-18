@@ -1,0 +1,31 @@
+
+.filter-group {
+  border: none;
+  padding: 0;
+  margin: 0 0 24px;
+  min-width: 0;
+}
+
+.filter-group legend {
+  font-size: 15px;
+  font-weight: 700;
+  color: #474747;
+  margin-bottom: 14px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #474747;
+  cursor: pointer;
+}
+
+.filter-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: #c92071;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+
+.checkout-payment {
+  grid-column: 1 / -1;
+}
+
+.checkout-payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.checkout-payment-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.checkout-payment-option:has(input:checked) {
+  border-color: #c92071;
+  background: #fff4f9;
+}
+
+.checkout-payment-fields {
+  display: grid;
+  gap: 12px;
+  max-width: 460px;
+}
+
+.checkout-payment-fields label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.checkout-payment-fields input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.checkout-payment-fields p {
+  font-size: 13px;
+  color: #666;
+}

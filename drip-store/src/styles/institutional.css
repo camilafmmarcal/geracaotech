@@ -1,0 +1,183 @@
+
+.institutional-page {
+  min-height: 70vh;
+  background: #f9f8fe;
+  padding: 48px 20px 80px;
+}
+
+.institutional-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.institutional-back {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #c92071;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.institutional-heading {
+  margin-bottom: 32px;
+}
+
+.institutional-eyebrow {
+  color: #c92071;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.institutional-heading h1 {
+  margin: 12px 0;
+  color: #1f1f1f;
+  font-size: clamp(28px, 4vw, 40px);
+}
+
+.institutional-heading p {
+  max-width: 720px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.institutional-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.institutional-card {
+  background: #fff;
+  padding: 28px;
+  border: 1px solid #eeeaf1;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.035);
+}
+
+.institutional-card h2 {
+  margin: 0 0 14px;
+  color: #292929;
+  font-size: 21px;
+}
+
+.institutional-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.institutional-icon {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 30px;
+}
+
+.institutional-section {
+  margin-top: 36px;
+}
+
+.institutional-form {
+  display: grid;
+  gap: 18px;
+  max-width: 680px;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #eeeaf1;
+  border-radius: 14px;
+}
+
+.institutional-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.institutional-field label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.institutional-field input,
+.institutional-field select,
+.institutional-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d7d4df;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  font: inherit;
+}
+
+.institutional-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.institutional-field input:focus,
+.institutional-field select:focus,
+.institutional-field textarea:focus {
+  outline: 2px solid #c92071;
+  outline-offset: 1px;
+}
+
+.institutional-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 14px 26px;
+  border: 0;
+  border-radius: 8px;
+  background: #c92071;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.institutional-button:hover {
+  background: #a7195b;
+}
+
+.institutional-notice {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-left: 4px solid #c92071;
+  background: #fff;
+  color: #555;
+  line-height: 1.7;
+}
+
+.institutional-success {
+  padding: 18px;
+  border: 1px solid #b8dfc5;
+  border-radius: 8px;
+  background: #f0faf3;
+  color: #21663a;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .institutional-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .institutional-page {
+    padding: 30px 15px 60px;
+  }
+
+  .institutional-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .institutional-form {
+    padding: 22px;
+  }
+}

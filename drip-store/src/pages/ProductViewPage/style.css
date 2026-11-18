@@ -1,0 +1,265 @@
+
+.product-view-page {
+  min-height: 70vh;
+  padding: 32px 20px 80px;
+  background-color: #f9f8fe;
+}
+
+.product-view-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  color: #474747;
+  font-size: 14px;
+}
+
+.product-breadcrumb a {
+  color: #474747;
+  text-decoration: none;
+}
+
+.product-breadcrumb a:hover {
+  color: #c92071;
+}
+
+.product-view-content {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 48px;
+}
+
+.product-view-info {
+  min-width: 0;
+  color: #474747;
+}
+
+.product-view-category {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #8f8f8f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-view-info h1 {
+  margin: 0 0 12px;
+  color: #1f1f1f;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.product-view-brand {
+  margin-bottom: 24px;
+  color: #8f8f8f;
+  font-size: 14px;
+}
+
+.product-view-prices {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.product-view-old-price {
+  color: #8f8f8f;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.product-view-final-price {
+  color: #1f1f1f;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.product-view-info h2 {
+  margin: 0 0 12px;
+  color: #474747;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.product-view-description {
+  margin-bottom: 24px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Área de compra */
+
+.product-purchase-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.product-buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 420px;
+  min-height: 78px;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffb81c;
+  color: #1f1f1f;
+  font-size: 23px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.product-buy-button:hover {
+  background-color: #f5aa00;
+}
+
+.product-buy-button:active {
+  transform: scale(0.99);
+}
+
+.product-buy-button:focus-visible {
+  outline: 3px solid #c92071;
+  outline-offset: 4px;
+}
+
+/* Aviso de confirmação */
+
+.purchase-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.purchase-feedback.success {
+  background-color: #edf9f1;
+  border: 1px solid #c8ead3;
+  color: #166534;
+}
+
+.purchase-feedback.error {
+  background-color: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+}
+
+.purchase-feedback-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.purchase-feedback-message > span:first-child {
+  flex-shrink: 0;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.purchase-feedback-link {
+  align-self: flex-end;
+  color: #c92071;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.purchase-feedback-link:hover {
+  text-decoration: underline;
+}
+
+.purchase-feedback-link:focus-visible {
+  outline: 2px solid #c92071;
+  outline-offset: 3px;
+}
+
+/* Voltar aos produtos */
+
+.product-purchase-actions .product-view-back {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  width: auto;
+  max-width: 100%;
+  margin-top: 26px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #c92071;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.product-purchase-actions .product-view-back:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+  .product-view-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .product-view-info h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-view-page {
+    padding: 24px 14px 50px;
+  }
+
+  .product-breadcrumb {
+    font-size: 12px;
+  }
+
+  .product-view-info h1 {
+    font-size: 24px;
+  }
+
+  .product-view-final-price {
+    font-size: 26px;
+  }
+
+  .product-buy-button {
+    max-width: none;
+    min-height: 62px;
+    font-size: 20px;
+  }
+
+  .purchase-feedback {
+    max-width: none;
+  }
+}
