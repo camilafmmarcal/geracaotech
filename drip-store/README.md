@@ -89,6 +89,7 @@ Este é um projeto acadêmico e demonstrativo.
 - [Protótipo de referência no Figma](https://www.figma.com/design/nUk0ihM3x4u8JQtxUoAEJf/DRIP-STORE---DIGITAL-COLLEGE--Copy-?node-id=22-30)
 
 ## Autoria
-Projeto individual — Geração Tech 4.0
-Aluna: Camila Fontenele Meira Marçal
-CPF: 041.661.733-67
+Projeto em equipe  — Geração Tech 4.0
+Alunos: Camila Fontenele Meira Marçal e Bruno Rafael Xavier Rodrigues
+Turma On-line Full Stack 
+
